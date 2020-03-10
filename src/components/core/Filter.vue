@@ -51,9 +51,9 @@
             xs3
           >
             <v-img
-              outline
               :class="[image === img ? 'image-active' : '']"
               :src="img"
+              outline
               height="120"
               @click.native="setImage(img)"
             />
