@@ -18,7 +18,7 @@
       />
     </template>
 
-    <v-divider class="mb-1" />
+    <!-- <v-divider class="mb-1" /> -->
 
     <v-list
       dense
@@ -27,11 +27,11 @@
       <v-list-item>
         <v-list-item-avatar
           class="align-self-center"
-          color="white"
+          color="black"
           contain
         >
           <v-img
-            src="https://demos.creative-tim.com/vuetify-material-dashboard/favicon.ico"
+            src="https://current360.com/wp-content/uploads/2018/03/Current360_bulb_orange_white.png"
             max-height="30"
           />
         </v-list-item-avatar>
@@ -76,7 +76,7 @@
       <div />
     </v-list>
 
-    <template v-slot:append>
+    <!-- <template v-slot:append>
       <base-item
         :item="{
           title: $t('upgrade'),
@@ -84,7 +84,7 @@
           to: '/upgrade',
         }"
       />
-    </template>
+    </template> -->
   </v-navigation-drawer>
 </template>
 
@@ -107,14 +107,84 @@ export default {
   data: () => ({
     items: [
       {
-        icon: 'mdi-view-dashboard',
         title: 'dashboard',
+        icon: 'mdi-view-dashboard',
         to: '/'
       },
       {
-        icon: 'mdi-account',
-        title: 'user',
-        to: '/pages/user'
+        title: 'clients',
+        icon: 'mdi-handshake',
+        to: '/clients'
+      },
+      {
+        title: 'jobs',
+        icon: 'mdi-briefcase',
+        to: '/jobs'
+      },
+      {
+        title: 'tasks',
+        icon: 'mdi-clipboard-text-multiple-outline',
+        to: '/tasks'
+      },
+      {
+        title: 'users',
+        icon: 'mdi-account-group',
+        to: '/users'
+      },
+      {
+        title: 'analytics',
+        icon: 'mdi-chart-bar',
+        to: '/analytics'
+      },
+      {
+        title: 'reports',
+        icon: 'mdi-file',
+        to: '/reports'
+      },
+      {
+        title: 'estimates',
+        icon: 'mdi-clock-check-outline',
+        to: '/estimates'
+      },
+      {
+        title: 'settings',
+        icon: 'mdi-cog',
+        to: '/settings'
+      },
+      {
+        title: 'quickbooks',
+        icon: 'mdi-book',
+        to: '/quickbooks'
+      },
+      {
+        title: 'support',
+        icon: 'mdi-lifebuoy',
+        to: '/support'
+      },
+      {
+        title: 'groups',
+        icon: 'mdi-group',
+        to: '/groups'
+      },
+      {
+        title: 'events',
+        icon: 'mdi-calendar',
+        to: '/events'
+      },
+      {
+        title: 'workcodes',
+        icon: 'mdi-alphabetical-variant',
+        to: '/workcodes'
+      },
+      {
+        title: 'workbacks',
+        icon: 'mdi-clipboard-flow',
+        to: '/workbacks'
+      },
+      {
+        title: 'providers',
+        icon: 'mdi-hail',
+        to: '/providers'
       },
       {
         title: 'rtables',
@@ -124,12 +194,12 @@ export default {
       {
         title: 'typography',
         icon: 'mdi-format-font',
-        to: '/components/typography'
+        to: '/pages/typography'
       },
       {
         title: 'icons',
         icon: 'mdi-chart-bubble',
-        to: '/components/icons'
+        to: '/pages/icons'
       },
       {
         title: 'google',
@@ -139,7 +209,7 @@ export default {
       {
         title: 'notifications',
         icon: 'mdi-bell',
-        to: '/components/notifications'
+        to: '/notifications'
       }
     ]
   }),

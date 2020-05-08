@@ -14,7 +14,7 @@
       small
       @click="setDrawer(!drawer)"
     >
-      <v-icon v-if="value">
+      <v-icon v-if="!drawer">
         mdi-view-quilt
       </v-icon>
 
@@ -110,7 +110,7 @@
       class="ml-2"
       min-width="0"
       text
-      to="/pages/user"
+      to="/user"
     >
       <v-icon>mdi-account</v-icon>
     </v-btn>
@@ -154,10 +154,7 @@ export default {
   },
 
   props: {
-    value: {
-      type: Boolean,
-      default: false
-    }
+    // nothing
   },
 
   data: () => ({
